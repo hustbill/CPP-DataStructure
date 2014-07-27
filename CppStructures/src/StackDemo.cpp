@@ -10,8 +10,30 @@
 
 using namespace std;
 
+typedef struct {
+	char c ;
+	short s;
+	int i;
+	long l;
+	float f;
+	double d;
+	long double ld;
+} Primitives;
+
+
+
 
 int main(){
+	Primitives p[10];
+	Primitives* pp = p;
+	cout << "sizeof(Primitives) = "
+			<< sizeof(Primitives) << endl;
+	cout << " pp = " << (long)pp << endl;
+	pp++;
+	cout << " pp = " << (long)pp << endl;
+
+
+
 	/*
 	 * Pre: The user supplies an integer n and n decimal numbers.
 	 * Post: The numbers are printed in reverse order.
